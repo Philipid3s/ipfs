@@ -1,0 +1,20 @@
+{
+  "name": "ipfs-test",
+  "version": "1.0.0",
+  "description": "IPFS test project",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./src/test101.js",
+    "bundle": "browserify src/index.js > public/bundle.js",
+    "serve": "http-server public -a 127.0.0.1 -p 8888",
+    "start": "npm run bundle && npm run serve"
+  },
+  "author": "Julien Regnault",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^16.2.3",
+    "concat-stream": "^1.6.2",
+    "http-server": "^0.11.1",
+    "ipfs": "^0.33.1"
+  }
+}
